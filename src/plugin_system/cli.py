@@ -5,11 +5,11 @@ import sys
 
 from plugin_system.core import format_record
 from plugin_system.models import Record
-from plugin_system.protocol import Formatter
-from plugin_system.registry import Registry
 from plugin_system.plugins.csv_fmt import CsvFormatter
 from plugin_system.plugins.json_fmt import JsonFormatter
 from plugin_system.plugins.text_fmt import TextFormatter
+from plugin_system.protocol import Formatter
+from plugin_system.registry import Registry
 
 
 def build_registry() -> Registry[Formatter]:

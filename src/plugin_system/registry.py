@@ -1,11 +1,8 @@
+
 """Generic Registry[T] for storing plugins by key."""
 
-from typing import Generic, TypeVar
 
-T = TypeVar("T")
-
-
-class Registry(Generic[T]):
+class Registry[T]:
     """
     Generic registry for storing items of type T by name.
 
